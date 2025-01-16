@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template: 
+        "aside  main"   1fr / /*alto de lo que queda coge todo*/
+         400px 1fr; /*aplica el ancho a todo*/
+    gap: 10px; /*separación entre las columnas*/
+    height: 100vh;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #E7E9EB;
+}
+
+main{
+    grid-area: main;
+    background-color: #E7E9EB;
+}
